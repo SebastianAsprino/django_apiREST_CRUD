@@ -1,4 +1,4 @@
-Para iniciar nuestro proyecto de django se requieren los siguientes comandos, ya han sido ejecutados con **Creación de proyecto**, sin embargo es pertinente explicarlos.
+Para iniciar nuestro proyecto de Django se requieren los siguientes comandos, el proyecto se realizó ejecutando los comandos en **Creación de proyecto**, sin embargo es pertinente explicarlos.
 
 ## Creación de proyecto
 Instalar el framework Django
