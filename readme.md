@@ -9,6 +9,19 @@ Para crear el proyecto se ha usado el siguiente comando
 ```
 django-admin startproject pokemon_api
 ```
+
+## Requerimientos
+Luego de clonar el repositorio es necesario instalar los requerimientos para que no haya ningún error relacionado a las dependencias usadas.
+Ubicarse en la carpeta DJANGO_APIREST_CRUD y ejecutar el siguiente comando:
+```
+pip install -r requirements.txt
+```
+Si se instala otra dependencia esta debe ser incluida en el archivo `requirements.txt`.
+Ubicarse en la carpeta DJANGO_APIREST_CRUD y ejecutar el siguiente comando:
+```
+pip freeze > requirements.txt
+```
+
 ## Estructura del proyecto
 Se han creado dos carpetas con el nombre `pokemon_api`, sin embargo la que contendrá el proyecto se le ha cambiado el nombre a `src` y la que unirá cada app creada está dentro de `src` llamada `pokemon_api`
 
@@ -43,5 +56,3 @@ Password:123!
 ```
 
 Introducido el superuser, se mostrará el panel de administración de Django.
-
-
