@@ -56,3 +56,9 @@ Password:123!
 ```
 
 Introducido el superuser, se mostrará el panel de administración de Django.
+
+
+
+
+NOTA:
+ejecutar python manage.py makemigrations pokemon_api en src para crear modelos con el orm de django.
