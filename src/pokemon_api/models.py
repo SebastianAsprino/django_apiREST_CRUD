@@ -11,9 +11,10 @@ class Pokemon(models.Model):
     height = models.IntegerField(null=False)
     weight = models.IntegerField(null=False)
     createdByDB = models.BooleanField(null=False, default=True)
+    types = models.ManyToManyField('Type', related_name='pokemons')
 
     class Meta:
-        db_table = 'pokemon'  # Opcional: especifica el nombre de la tabla si quieres que sea diferente al predeterminado
+        db_table = 'pokemon'
 
 
 class Type(models.Model):
@@ -21,5 +22,5 @@ class Type(models.Model):
     id = models.AutoField(primary_key=True)
 
     class Meta:
-        db_table = 'type'  # Especifica el nombre de la tabla si quieres que sea diferente al nombre modelo predeterminado
+        db_table = 'type'
 

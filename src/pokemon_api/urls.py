@@ -17,6 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
+from django.urls import path, include
+from pokemon_api.controllers.hola_controller import api_hola
+from pokemon_api.controllers.pokemons import fetch_and_create_pokemons
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', api_hola, name='api_hola'),
+    path('fetch_pokemons/', fetch_and_create_pokemons, name='fetch_pokemons'),
 ]
+# path('', include('pokemon_api.routes.hola_route'))
